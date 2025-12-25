@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Game - A fun typing text game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="over" id="over" style="width: 100%; height: 100vh !important; background-color: #00000035; position: absolute; top: 0; backdrop-filter: blur(1px); z-index: 100;"></div>
+    <nav><h1>TyPost Game.</h1><span style="display: flex; align-items: center; gap: 20px; font-size: 16px;"><span id="nameP" onclick="editName()" style="cursor: pointer;"></span><i class="fa-solid fa-ranking-star" onclick="location.href = 'rank.html'"></i></span></nav>
+    <div class="container">
+        <div class="flex">
+            <span id="time">59s</span>
+            <div class="flex" style="gap: 10px;">
+                <span id="c">Download Certificate</span>
+                <span id="speed">69 WPM</span>
+                <span id="acc">Accuracy</span>
+            </div>
+        </div>
+        <h1 style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 18px; font-weight: normal; color: #5d5f62;" class="g"><i class="fa-solid fa-earth-americas" style="font-size: 16px; width: fit-content; margin: 0;"></i> english</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat provident eligendi magnam explicabo? Vero numquam dignissimos praesentium omnis esse. Non, hic minima. Temporibus quas nihil Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, molestias ipsum ducimus similique deleniti adipisci autem reprehenderit quae. Adipisci earum ipsum iusto, porro eaque iure ut illo facere ad molestias? soluta necessitatibus, consectetur architecto harum?</p>
+        <input type="text" id="typing" placeholder="Start Typing Here" autofocus style="width: 0; padding: 0; margin: 0;">
+        <i class="fa fa-rotate-right" id="reload" style="margin: 0 auto;"></i>
+    </div>
+    <footer>
+        <kbd>R</kbd>&nbsp;+&nbsp;<kbd>Enter</kbd>&nbsp;-&nbsp;restart
+    </footer>
+    <div class="user">
+        <h1 id="popH1" style="cursor: pointer;">Enter Your Name</h1>
+        <input type="text" id="Uname" placeholder="Enter Your Name">
+    </div>
+    <iframe src="./Certificate.pdf" id="cert" frameborder="0" width="470" height="390"></iframe>
+    <div style="text-align: center; margin-top: 30px; color: #0271ff;">
+        <p>Made By <strong>SONU KUMAR UPADHYAY</strong> with ❤️</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="firebase.js" type="module"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="certificate.js"></script>
+</body>
+</html>
